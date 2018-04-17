@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="robbyturnip333.gmail.com.latihan_2.MainActivity">
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="cursive"
+        android:gravity="center_vertical|center"
+        android:text="Robby Maulana Turnip"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TODO 4: menambahkan aksi jika checkbox di klik-->
+    <CheckBox
+        android:id="@+id/cbbold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:onClick="cbBoldKLik"
+        android:text="Teks di-bold" />
+
+    <CheckBox
+        android:id="@+id/cbitalic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:checked="false"
+        android:onClick="cbItalic"
+        android:text="Italic" />
+
+    <TextView
+        android:id="@+id/warna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:fontFamily="monospace"
+        android:text="Ubah warna latar" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbyellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:onClick="warnaKlik"
+            android:text="YELLOW" />
+
+        <RadioButton
+            android:id="@+id/rbblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:onClick="warnaKlik"
+            android:paddingTop="0dp"
+            android:text="BLUE" />
+
+        <RadioButton
+            android:id="@+id/rbgreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:onClick="warnaKlik"
+            android:text="GREEN" />
+
+        <RadioButton
+            android:id="@+id/rbred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:onClick="warnaKlik"
+            android:text="RED" />
+    </RadioGroup>
+
+</LinearLayout>
